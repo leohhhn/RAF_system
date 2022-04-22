@@ -4,9 +4,11 @@ pragma solidity 0.8.4;
 interface IRAFSystem {
 
     enum Smer {RN, RI, D, IT}
-    event UpisanStudent(address _student);
+
+    event UpisanStudent(address _student, string indeks, Smer smer);
     event DodatPredmet(string _nazivPredmeta, uint256 _predmetID);
     event PolozenPredmet(address _student, uint256 _predmetID);
+    event DodatProfesor(address _noviProfesor);
 
     struct Student {
         string indeks; // npr 102/2020
