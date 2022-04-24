@@ -19,7 +19,7 @@ async function main() {
 
   await rafsystem.deployed();
 
-  console.log("Greeter deployed to:", rafsystem.address);
+  console.log("RAFSystem deployed to:", rafsystem.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
