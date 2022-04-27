@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  padding: 2rem;
+  margin: 0;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+pre {
+  overflow: auto;
+}
+
+.CursorPointer {
+  cursor: pointer;
+}
+
+.CursorNotAllowed {
+  cursor: not-allowed !important;
+}
+
+.UserSelectNone {
+  user-select: none;
+}
+
+.NoWrap {
+  white-space: nowrap;
+}
+
+.TextAlignLeft {
+  text-align: left;
+}
+
+.TextAlignRight {
+  text-align: right;
+}
+
+.TextAlignCenter {
+  text-align: center;
+}
+
+.VerticalAlignSuperscript {
+  vertical-align: super;
+}
+
+.VerticalAlignSubscript {
+  vertical-align: sub;
+}
+
+.DisplayBlock {
+  display: block;
+}
+
+.DisplayFlex {
+  display: flex;
+}
+
+.DisplayNone {
+  display: none !important;
+}
+
+.FlexDirectionColumn {
+  flex-direction: column;
+}
+
+.FlexGap0 {
+  gap: 0.5rem;
+}
+
+.FlexGap1 {
+  gap: 1rem;
+}
+
+.Flex1 {
+  flex: 1 1 0;
+}
+
+.FlexAuto {
+  flex: 0 0 auto;
+}
+
+.FlexWrap {
+  flex-wrap: wrap;
+}
+
+.OverflowHidden {
+  overflow: hidden;
+}
+
+.OverflowXHidden {
+  overflow-x: hidden;
+}
+
+.OverflowYHidden {
+  overflow-y: hidden;
+}
+
+.TextOverflowEllipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.OverflowXScroll {
+  overflow-x: auto;
+}
+
+.OverflowYScroll {
+  overflow-y: auto;
+}
+
+.DisplayInlineBlock {
+  display: inline-block;
+}
+
+.DisplayInlineFlex {
+  display: inline-flex;
+}
+
+.AlignItemsCenter {
+  align-items: center;
+}
+
+.AlignItemsStart {
+  align-items: flex-start;
+}
+
+.AlignItemsEnd {
+  align-items: flex-end;
+}
+
+.AlignItemsStretch {
+  align-items: stretch;
+}
+
+.AlignSelfStretch {
+  align-self: stretch;
+}
+
+.JustifyContentStart {
+  justify-content: flex-start;
+}
+
+.JustifyContentEnd {
+  justify-content: flex-end;
+}
+
+.JustifyContentCenter {
+  justify-content: center;
+}
+
+.JustifyContentSpaceBetween {
+  justify-content: space-between;
+}
+
+.JustifyContentSpaceAround {
+  justify-content: space-around;
+}
+
+.MarginNone {
+  margin: 0 !important;
+}
+
+.MarginCentered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MarginBottom0 {
+  margin-bottom: 0.25rem !important;
+}
+
+.MarginBottom1 {
+  margin-bottom: 0.5rem !important;
+}
+
+.MarginBottom2 {
+  margin-bottom: 1rem !important;
+}
+
+.MarginBottom3 {
+  margin-bottom: 1.5rem !important;
+}
+
+.MarginBottom4 {
+  margin-bottom: 2rem !important;
+}
+
+.MarginTop0 {
+  margin-top: 0.25rem !important;
+}
+
+.MarginTop1 {
+  margin-top: 0.5rem !important;
+}
+
+.MarginTop2 {
+  margin-top: 1rem !important;
+}
+
+.MarginTop3 {
+  margin-top: 1.5rem !important;
+}
+
+.MarginTop4 {
+  margin-top: 2rem !important;
+}
+
+.MarginAuto {
+  margin: auto;
+}
+
+.MarginLeftAuto {
+  margin-left: auto;
+}
+
+.MarginRightAuto {
+  margin-right: auto;
+}
+
+.MarginLeft0 {
+  margin-left: 0.25rem;
+}
+
+.MarginLeft1 {
+  margin-left: 0.5rem;
+}
+
+.MarginLeft2 {
+  margin-left: 1rem;
+}
+
+.MarginLeft3 {
+  margin-left: 1.5rem;
+}
+
+.MarginLeft4 {
+  margin-left: 2rem;
+}
+
+.MarginRight0 {
+  margin-right: 0.25rem !important;
+}
+
+.MarginRight1 {
+  margin-right: 0.5rem !important;
+}
+
+.MarginRight2 {
+  margin-right: 1rem !important;
+}
+
+.MarginRight3 {
+  margin-right: 1.5rem !important;
+}
+
+.MarginRight4 {
+  margin-right: 2rem !important;
+}
+
+.PaddingLeft0 {
+  padding-left: 0.25rem;
+}
+
+.PaddingLeft1 {
+  padding-left: 0.5rem;
+}
+
+.PaddingLeft2 {
+  padding-left: 1rem;
+}
+
+.PaddingLeft3 {
+  padding-left: 1.5rem;
+}
+
+.PaddingLeft4 {
+  padding-left: 2rem;
+}
+
+.Padding0 {
+  padding: 0.25rem !important;
+}
+
+.Padding1 {
+  padding: 0.5rem !important;
+}
+
+.Padding2 {
+  padding: 1rem !important;
+}
+
+.Padding3 {
+  padding: 1.5rem;
+}
+
+.Padding4 {
+  padding: 2rem;
+}
+
+.BorderRadius1 {
+  border-radius: 3px !important;
+}
+
+.BorderRadius2 {
+  border-radius: 4px;
+}
+
+.BorderRadius3 {
+  border-radius: 6px;
+}
+
+.BorderRadius4 {
+  border-radius: 8px !important;
+}
+
+.BorderRadius5 {
+  border-radius: 12px !important;
+}
+
+.WordBreakAll {
+  word-break: break-all;
+}
+
+.WordBreakWord {
+  word-break: break-word;
+}
+
+/* Text */
+.FontSize1 {
+  font-size: 1rem;
+}
+
+.FontSize2 {
+  font-size: 1.2rem;
+}
+
+.FontSize3 {
+  font-size: 1.4rem;
+}
+
+.FontSize4 {
+  font-size: 2rem;
+}
+
+.NormalText {
+  font-weight: 400;
+}
+
+.SemiBoldText {
+  font-weight: 600;
+}
+
+.BoldText {
+  font-weight: 700;
+}
+
+.SuccessText {
+  color: green;
+}
+
+.DangerText {
+  color: red;
+}
+
+.WarningText {
+  color: orange;
+}
+
+.LinkText {
+  color: blue;
+}
+
+.WhiteText {
+  color: white;
+}
+
+.BackgroundGray {
+  background: #e7e7e7;
+}

@@ -1,0 +1,80 @@
+.InputWrapper {
+  background: #7b90ad;
+  border: 1px solid #042D56;
+  position: relative;
+  border-radius: 4px;
+  transition: 0.15s;
+}
+
+.InputWrapper:hover {
+  background-color: #2a405e;
+}
+
+.InputWrapper.Active {
+  border-color: #7b90ad;
+}
+
+.InputWrapper.Focused {
+  background-color: #334762;
+  box-shadow: 0 0 0 3px #577398;
+  border-color: #2a405e;
+}
+
+.InputWrapper.Disabled {
+  border-color: gray;
+  opacity: 0.75;
+  color: #222;
+}
+
+.InputWrapper.Disabled .Input {
+  cursor: no-drop;
+}
+
+.InputWrapper.ReadOnly {
+  border-color: #7b90ad;
+  background-color: #2a405e;
+  pointer-events: none;
+}
+
+.InputWrapper.ReadOnly .Input {
+  cursor: auto;
+}
+
+.Input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 9px 11px 8px 11px;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+
+.Input:focus,
+.Input:hover,
+.Input:active {
+  outline: none;
+}
+
+.Input::placeholder {
+  color: #fff;
+}
+
+.InputIcon {
+  transform-origin: center;
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  transform: scale(0.1);
+  opacity: 0;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.InputLabel {
+  cursor: text;
+  position: absolute;
+  left: 15px;
+  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-size: 1.4rem;
+  top: 8px;
+}

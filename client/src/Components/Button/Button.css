@@ -1,0 +1,23 @@
+.Button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  justify-content: center;
+  border: 1px solid #042d56;
+  background-color: #0f5598;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.Button:hover {
+  background-color: #4577a6;
+}
+
+.Button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

@@ -1,0 +1,33 @@
+.ConnectWalletButton {
+  background: #0f5598;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 13px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.ConnectWalletButton:hover {
+  background: #4577a6;
+}
+
+.ConnectWalletButton:disabled {
+  cursor: not-allowed;
+  user-select: none;
+  background: #b4cbe0;
+}
+
+.ConnectWalletButton--Connected {
+  border: 2px solid #0f5598;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
