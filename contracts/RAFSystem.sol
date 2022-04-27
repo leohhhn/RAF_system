@@ -59,7 +59,7 @@ contract RAFSystem is IRAFSystem {
     function izracunajOcenu(address _student, uint _predmetID) view override public validanStudent(_student) validanPredmet(_predmetID) returns (uint8) {
         uint8 _poeni = polozeno[_predmetID][_student];
 
-        if (_poeni == 0) { // student nije polozio predmet
+        if (_poeni == 0) {// student nije polozio predmet
             return 5;
         } else if (_poeni <= 60) {
             return 6;
@@ -72,6 +72,10 @@ contract RAFSystem is IRAFSystem {
         } else {
             return 10;
         }
+    }
+
+    function getLatestPredmetID() view public returns (uint256) {
+        return Counters.current(_predmetIDCounter) - 1;
     }
 
     function getPredmet(uint _predmetID) public override view validanPredmet(_predmetID) returns (Predmet memory)  {

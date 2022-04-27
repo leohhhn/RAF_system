@@ -38,4 +38,6 @@ interface IRAFSystem {
     function getPredmet(uint _predmetID) external view returns (Predmet memory);
 
     function dodajProfesora(address _noviProfesor) external;
+
+    function getLatestPredmetID() view external returns (uint256);
 }
